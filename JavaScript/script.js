@@ -435,3 +435,76 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+// ajuste de movil en la barra
+// Menú móvil toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+  const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+  const body = document.body;
+
+  if (menuToggle && mobileNav) {
+    // Toggle del menú
+    menuToggle.addEventListener('click', function() {
+      mobileNav.classList.toggle('active');
+      menuToggle.classList.toggle('open');
+      
+      // Prevenir scroll cuando el menú está abierto
+      if (mobileNav.classList.contains('active')) {
+        body.style.overflow = 'hidden';
+      } else {
+        body.style.overflow = '';
+      }
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileNav.classList.remove('active');
+        menuToggle.classList.remove('open');
+        body.style.overflow = '';
+      });
+    });
+
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener('click', function(event) {
+      if (!mobileNav.contains(event.target) && 
+          !menuToggle.contains(event.target) && 
+          mobileNav.classList.contains('active')) {
+        mobileNav.classList.remove('active');
+        menuToggle.classList.remove('open');
+        body.style.overflow = '';
+      }
+    });
+
+    // Cerrar menú con tecla Escape
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' && mobileNav.classList.contains('active')) {
+        mobileNav.classList.remove('active');
+        menuToggle.classList.remove('open');
+        body.style.overflow = '';
+      }
+    });
+  }
+
+  // Scroll suave para todos los enlaces internos
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      
+      if (href === '#') return;
+      
+      e.preventDefault();
+      const targetElement = document.querySelector(href);
+      
+      if (targetElement) {
+        const headerHeight = document.querySelector('.mobile-header').offsetHeight;
+        window.scrollTo({
+          top: targetElement.offsetTop - headerHeight,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});

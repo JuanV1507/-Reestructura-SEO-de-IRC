@@ -109,42 +109,53 @@
 
   <main>
     <!-- HEADER FIJO -->
-    <header class="mobile-header">
-      
-       <ul class="nav-links">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#clientes">Clientes</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+<header class="mobile-header">
+  <div class="mobile-bar">
+    <div class="logo">
+      <img src="Imagenes/logo-removebg-preview.png" alt="Impulsora de Recuperación Crediticia">
+    </div>
+
+    <!-- MENÚ DESKTOP (visible solo en desktop) -->
+    <nav class="desktop-nav">
+      <ul class="nav-links">
+        <li><a href="#inicio" class="nav-item">Inicio</a></li>
+        <li><a href="#nosotros" class="nav-item">Nosotros</a></li>
+        <li><a href="#servicios" class="nav-item">Servicios</a></li>
+        <li><a href="#clientes" class="nav-item">Clientes</a></li>
+        <li><a href="#contacto" class="nav-item">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Switch de idiomas -->
+    <div class="lang-switch">
+      <button onclick="switchLanguage('chino')">
+        <img src="Imagenes/bandera china.webp" alt="ZH">
+      </button>
+      <button onclick="switchLanguage('es')">
+        <img src="Imagenes/bandera-mexico.webp" alt="ES">
+      </button>
+      <button onclick="switchLanguage('en')">
+        <img src="Imagenes/bandera-usa.webp" alt="EN">
+      </button>
+    </div>
+
+    <!-- Botón hamburguesa (solo móvil) -->
+    <button class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Menú móvil (solo se activa en móvil) -->
+  <nav class="mobile-nav">
+    <ul class="mobile-menu">
+      <li><a href="#inicio" class="nav-item">Inicio</a></li>
+      <li><a href="#nosotros" class="nav-item">Nosotros</a></li>
+      <li><a href="#servicios" class="nav-item">Servicios</a></li>
+      <li><a href="#clientes" class="nav-item">Clientes</a></li>
+      <li><a href="#contacto" class="nav-item">Contacto</a></li>
     </ul>
-      
-      <div class="mobile-bar">
-        
-
-        <div class="logo">
-          <img src="Imagenes/logo-removebg-preview.png" alt="Impulsora de Recuperación Crediticia">
-        </div>
-
-        <div class="lang-switch">
-          <button onclick="switchLanguage('es')">
-            <img src="Imagenes/bandera-mexico.webp" alt="ES">
-          </button>
-          <button onclick="switchLanguage('en')">
-            <img src="Imagenes/bandera-usa.webp" alt="EN">
-          </button>
-          <button onclick="switchLanguage('chino')">
-            <img src="Imagenes/bandera china.webp" alt="ZH">
-          </button>
-        </div>
-
-        <button class="menu-toggle" id="menu-toggle">
-          <span></span><span></span><span></span>
-        </button>
-
-      </div>
-    
-    </header>
+  </nav>
+</header>
     
 
     <!-- HERO FULL -->
@@ -354,6 +365,9 @@
           <img src="Imagenes/Perfil.jpeg" alt="Perfil de la empresa" loading="lazy">
         </div>
       </div>
+    </section>
+
+    <section>
       <div class="container">
         <h2 class="values-section-title">Nuestros Valores</h2>
 
@@ -444,15 +458,15 @@
 
           <ul class="contact-steps">
             <li>
-              <img src="Imagenes/icons8-formulario-64.png" alt="Formulario">
+              <img src="Imagenes/formulario1.svg" alt="Formulario">
               <span data-key="contactStep1">Solo necesitas llenar el formulario.</span>
             </li>
             <li>
-              <img src="Imagenes/icons8-contacto-40.png" alt="Llamada">
+              <img src="Imagenes/contacto1.svg" alt="Llamada">
               <span data-key="contactStep2">Te llamaremos en breve.</span>
             </li>
             <li>
-              <img src="Imagenes/icons8-trato-32.png" alt="Seguridad">
+              <img src="Imagenes/dinero.svg" alt="Seguridad">
               <span data-key="contactStep3">Empieza a recuperar lo tuyo ahora.</span>
             </li>
           </ul>
