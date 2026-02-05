@@ -2307,13 +2307,14 @@ footer {
 
 /* Para pantallas muy pequeñas (menos de 480px) */
 @media (max-width: 480px) {
-  .map-wrapper {
+ .map-wrapper {
     block-size: 300px; /* Aún más pequeño */
   }
   
   .map-country-list {
-    grid-template-columns: 1fr; /* Una sola columna en móviles muy pequeños */
+    grid-template-columns: repeat(2, 1fr); /* ← MANTENER 2 COLUMNAS */
     font-size: 0.85rem;
+    gap: 0.4rem 1rem; /* Más compacto */
   }
   
   #mapa .values-section-title {
