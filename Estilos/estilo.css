@@ -1320,7 +1320,7 @@ footer {
     inset-block-start: 0;
     inline-size: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.95); 
     border-block-end: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -1598,7 +1598,7 @@ footer {
     inset-block-start: 0;
     inline-size: 100%;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
@@ -2250,3 +2250,74 @@ footer {
     padding-block-start: 0;
   }
 }
+
+/* ================================
+   RESPONSIVE PARA MAPA GLOBAL
+================================ */
+
+@media (max-width: 768px) {
+  /* Ajustes específicos para la sección mapa */
+  #mapa {
+    padding: 2.5rem 1rem; /* Menos padding en móvil */
+  }
+  
+  #mapa .values-section-title {
+    font-size: 2rem; /* Título más pequeño */
+    padding-block-end: 1rem;
+  }
+  
+  #mapa .section-subtitle {
+    font-size: 1rem; /* Subtítulo más pequeño */
+    margin-block-end: 2rem;
+  }
+  
+  /* Cambiar orden: mapa arriba, lista abajo */
+  .map-layout {
+    grid-template-columns: 1fr; /* Una sola columna */
+    gap: 2rem;
+    display: flex;
+    flex-direction: column; /* Columna vertical */
+  }
+  
+  /* Forzar que el mapa esté primero en el orden visual */
+  .map-wrapper {
+    order: -1; /* Esto coloca el mapa primero */
+    block-size: 350px; /* Altura más pequeña para móvil */
+    margin-block-end: 1.5rem;
+  }
+  
+  /* Ajustar lista de países para móvil */
+  .map-country-list {
+    grid-template-columns: repeat(2, 1fr); /* Mantener 2 columnas */
+    gap: 0.5rem 1rem; /* Espaciado más compacto */
+    font-size: 0.9rem; /* Texto más pequeño */
+    order: 2; /* Lista después del mapa */
+  }
+  
+  /* Asegurar que el mapa sea visible */
+  #map {
+    min-block-size: 300px; /* Altura mínima */
+  }
+  
+  /* Reducir el hover effect en móvil */
+  .map-wrapper:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  .map-wrapper {
+    block-size: 300px; /* Aún más pequeño */
+  }
+  
+  .map-country-list {
+    grid-template-columns: 1fr; /* Una sola columna en móviles muy pequeños */
+    font-size: 0.85rem;
+  }
+  
+  #mapa .values-section-title {
+    font-size: 1.7rem;
+  }
+}
+
