@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!DOCTYPE html>
-<html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>Cobranza Extrajudicial y Recuperación de Cartera | International Recovery and Collection</title>
+  <title>Recuperación de Cartera y Cobranza Extrajudicial | IRC - México y USA</title>
   <meta name="description"
-    content="Especialistas en cobranza extrajudicial y recuperación de cartera vencida. Asesoría legal y negociación de deuda en México y EE.UU." />
+    content="Empresa líder en cobranza extrajudicial y recuperación de cartera vencida. Servicio legal especializado para negociar y recuperar sus deudas en México y EE.UU. ¡Resultados garantizados!" />
   <meta name="author" content="Impulsora de Recuperación Crediticia" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://ircdebtrecovery.com/" />
+
+  <!-- URL CANÓNICA Y MULTILINGÜE (hreflang) -->
+  <link rel="canonical" href="https://ircdebtrecovery.com/es/" />
+  <!-- BLOQUE ÚNICO Y COMPLETO -->
+  <link rel="alternate" hreflang="es" href="https://ircdebtrecovery.com/es/" />
+  <link rel="alternate" hreflang="en" href="https://ircdebtrecovery.com/en/" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://ircdebtrecovery.com/zh-hans/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://ircdebtrecovery.com/zh-hant/" />
+  <link rel="alternate" hreflang="x-default" href="https://ircdebtrecovery.com/" />
+
+  <!-- OPEN GRAPH CONSISTENTE CON ESTA PÁGINA (español) -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="Impulsora de Recuperación Crediticia">
-
-
-  <!-- SEO Multilingüe -->
-  <link rel="alternate" hreflang="es" href="https://ircdebtrecovery.com/es/" />
-  <link rel="alternate" hreflang="en" href="https://ircdebtrecovery.com/en/" />
-
-  <!-- Open Graph para compartir en redes -->
-  <meta property="og:title" content="International Recovery and Collection | Cobranza amigable y legal internacional" />
+  <meta property="og:title" content="Recuperación de Cartera y Cobranza Extrajudicial | IRC" />
   <meta property="og:description"
-    content="Soluciones en cobranza amigable,Recuperación de credito, asesoría jurídica y recuperación de cartera vencida a nivel global." />
-  <meta property="og:image" content="https://ircdebtrecovery.com/Imagenes/logo.webp" />
-  <meta property="og:url" content="https://ircdebtrecovery.com/" />
+    content="Especialistas en recuperación de cartera y cobranza extrajudicial para empresas en México y Estados Unidos. Soluciones legales efectivas." />
+  <meta property="og:image" content="https://ircdebtrecovery.com/Imagenes/logo-og-es.webp" />
+  <!-- debe coincidir con la URL canónica -->
+  <meta property="og:url" content="https://ircdebtrecovery.com/es/" />
 
+  <!-- TWITTER CARD -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Cobranza Extrajudicial y Recuperación de Cartera">
+  <meta name="twitter:title" content="Recuperación de Cartera y Cobranza Extrajudicial">
   <meta name="twitter:description"
-    content="Soluciones profesionales en cobranza y negociación de deuda en México y EE.UU.">
-  <meta name="twitter:image" content="https://ircdebtrecovery.com/Imagenes/logo.webp">
+    content="Empresa líder en cobranza extrajudicial y recuperación de cartera vencida para México y USA.">
+  <meta name="twitter:image" content="https://ircdebtrecovery.com/Imagenes/logo-twitter-es.webp">
 
-
-  <!-- Preconexión de rendimiento -->
+  <!-- PRE-CONEXIONES Y PRELOADS  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="Estilos/estilo.css" as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+    as="style" />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lora:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
-    rel="stylesheet">
+  <!-- GOOGLE FONTS (cargar solo las necesarias) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Lora:wght@400;700&display=swap"
+    rel="stylesheet" />
 
-  <!-- AOS Animaciones -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-
-  <!-- Iconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- Leaflet Mapa -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-
-  <!-- Estilos del sitio -->
+  <!-- ESTILOS PRINCIPALES (cargar temprano) -->
   <link rel="stylesheet" href="Estilos/estilo.css" />
 
-  <!-- Favicon e íconos para dispositivos -->
+  <!-- RECURSOS DE TERCEROS (diferidos/cargados después) -->
+  <!-- AOS - Cargar diferido si no es crítico para contenido visible -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" media="print"
+    onload="this.media='all'" />
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Leaflet - Solo si el mapa está en esta página -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+
+  <!-- FAVICON Y MANIFEST -->
   <link rel="icon" href="Imagenes/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="32x32" href="Imagenes/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="Imagenes/favicon-16x16.png">
@@ -67,33 +70,64 @@
   <link rel="icon" type="image/png" sizes="192x192" href="Imagenes/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="Imagenes/android-chrome-512x512.png">
   <link rel="manifest" href="site.webmanifest" />
-  <!-- Datos estructurados (schema.org) -->
-  <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": ["Organization", "FinancialService", "LegalService"],
-        "name": "International Recovery and Collection",
-        "url": "https://ircdebtrecovery.com",
-        "logo": "https://ircdebtrecovery.com/Imagenes/logo.png",
-        "description": "Recupera tu dinero con nuestros expertos en cobranza extrajudicial, asesoría legal y negociación efectiva de deudas. Cobertura en México y el extranjero.",
-              "areaServed": [
-          {
-            "@type": "Country",
-            "name": "Mexico"
-          },
-          {
-            "@type": "Country",
-            "name": "United States"
-          }
-        ],
-        "serviceType": "Cobranza extrajudicial y recuperación de cartera",
-        "sameAs": [
-          "https://www.linkedin.com/in/thor-robledo-sandoval-750624b7"
-        ]
-      }
-      </script>
 
-  <!-- Google Analytics (GA4) -->
+  <!-- DATOS ESTRUCTURADOS COMPLETOS Y CORRECTOS -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ircdebtrecovery.com/#website",
+        "url": "https://ircdebtrecovery.com/",
+        "name": "International Recovery and Collection",
+        "description": "Especialistas en recuperación de cartera y cobranza extrajudicial internacional",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://ircdebtrecovery.com/es/#webpage",
+        "url": "https://ircdebtrecovery.com/es/",
+        "name": "Recuperación de Cartera y Cobranza Extrajudicial | IRC - México y USA",
+        "description": "Empresa líder en cobranza extrajudicial y recuperación de cartera vencida para México y Estados Unidos.",
+        "isPartOf": {"@id": "https://ircdebtrecovery.com/#website"},
+        "datePublished": "2025-01-01",
+        "dateModified": "2026-02-01",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "LegalService",
+        "@id": "https://ircdebtrecovery.com/es/#service",
+        "name": "Cobranza Extrajudicial y Recuperación de Cartera",
+        "provider": {
+          "@type": "Organization",
+          "name": "Impulsora de Recuperación Crediticia",
+          "alternateName": "IRC",
+          "url": "https://ircdebtrecovery.com/es/",
+          "logo": "https://ircdebtrecovery.com/Imagenes/logo.webp",
+          "telephone": "+52 998 216 0639",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "MX",
+            "addressRegion": "Ciudad de México"
+          },
+          "areaServed": ["MX", "US"],
+          "sameAs": [
+            "https://www.linkedin.com/in/thor-robledo-sandoval-750624b7"
+          ]
+        },
+        "serviceType": "Debt Collection",
+        "description": "Servicios profesionales de cobranza extrajudicial y recuperación de cartera vencida para empresas en México y Estados Unidos.",
+        "offers": {
+          "@type": "Offer",
+          "category": "Legal and Financial Services"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- GOOGLE ANALYTICS (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCH1MYMKQG"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -101,75 +135,82 @@
     gtag('js', new Date());
     gtag('config', 'G-RCH1MYMKQG');
   </script>
-</head>
 
+  <?php
+  session_start();
+  // Generar token CSFR solo si no existe
+  if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+  }
+  ?>
+</head>
 
 <body>
   <!-- Header / Navegación -->
-
   <main>
     <!-- HEADER FIJO -->
-<header class="mobile-header">
-  <div class="mobile-bar">
-    <div class="logo">
-      <img src="Imagenes/logo-removebg-preview.png" alt="Impulsora de Recuperación Crediticia">
-    </div>
+    <header class="mobile-header">
+      <div class="mobile-bar">
+        <div class="logo">
+          <img src="Imagenes/logo-removebg-preview.png" alt="Impulsora de Recuperación Crediticia">
+        </div>
 
-    <!-- MENÚ DESKTOP (visible solo en desktop) -->
-    <nav class="desktop-nav">
-      <ul class="nav-links">
-        <li><a href="#inicio" class="nav-item">Inicio</a></li>
-        <li><a href="#nosotros" class="nav-item">Nosotros</a></li>
-        <li><a href="#servicios" class="nav-item">Servicios</a></li>
-        <li><a href="#clientes" class="nav-item">Clientes</a></li>
-        <li><a href="#contacto" class="nav-item">Contacto</a></li>
-      </ul>
-    </nav>
+        <!-- MENÚ DESKTOP (visible solo en desktop) -->
+        <nav class="desktop-nav">
+          <ul class="nav-links">
+            <li><a href="#inicio" class="nav-item">Inicio</a></li>
+            <li><a href="#nosotros" class="nav-item">Nosotros</a></li>
+            <li><a href="#servicios" class="nav-item">Servicios</a></li>
+            <li><a href="#clientes" class="nav-item">Clientes</a></li>
+            <li><a href="#contacto" class="nav-item">Contacto</a></li>
+          </ul>
+        </nav>
 
-    <!-- Switch de idiomas -->
-    <div class="lang-switch">
-      <button onclick="switchLanguage('chino')">
-        <img src="Imagenes/bandera china.webp" alt="ZH">
-      </button>
-      <button onclick="switchLanguage('es')">
-        <img src="Imagenes/bandera-mexico.webp" alt="ES">
-      </button>
-      <button onclick="switchLanguage('en')">
-        <img src="Imagenes/bandera-usa.webp" alt="EN">
-      </button>
-    </div>
+        <!-- Switch de idiomas -->
+        <div class="lang-switch">
+          <button onclick="switchLanguage('chino')">
+            <img src="Imagenes/bandera china.webp" alt="ZH">
+          </button>
+          <button onclick="switchLanguage('es')">
+            <img src="Imagenes/bandera-mexico.webp" alt="ES">
+          </button>
+          <button onclick="switchLanguage('en')">
+            <img src="Imagenes/bandera-usa.webp" alt="EN">
+          </button>
+        </div>
 
-    <!-- Botón hamburguesa (solo móvil) -->
-    <button class="menu-toggle" id="menu-toggle">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+        <!-- Botón hamburguesa (solo móvil) -->
+        <button class="menu-toggle" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
 
-  <!-- Menú móvil (solo se activa en móvil) -->
-  <nav class="mobile-nav">
-    <ul class="mobile-menu">
-      <li><a href="#inicio" class="nav-item">Inicio</a></li>
-      <li><a href="#nosotros" class="nav-item">Nosotros</a></li>
-      <li><a href="#servicios" class="nav-item">Servicios</a></li>
-      <li><a href="#clientes" class="nav-item">Clientes</a></li>
-      <li><a href="#contacto" class="nav-item">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
-    
+      <!-- Menú móvil (solo se activa en móvil) -->
+      <nav class="mobile-nav">
+        <ul class="mobile-menu">
+          <li><a href="#inicio" class="nav-item">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-item">Nosotros</a></li>
+          <li><a href="#servicios" class="nav-item">Servicios</a></li>
+          <li><a href="#clientes" class="nav-item">Clientes</a></li>
+          <li><a href="#contacto" class="nav-item">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
 
     <!-- HERO FULL -->
     <section id="inicio" class="hero fade-in" data-aos="fade-in">
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <h1 id="hero-title" data-key="heroTitle">IMPULSORA DE RECUPERACIÓN CREDITICIA</h1>
-        <p data-key="heroSubtitle"> Cobramos honorarios conforme a los pagos de deudores </p>
-        <p class="highlight" data-key="heroHighlight"> Especialistas en cobranza extrajudicial y recuperación de
-          cartera.</p>
+        <h1 id="hero-title" data-key="heroTitle">COBRANZA EXTRAJUDICIAL Y RECUPERACION DE CARTERA | IRC</h1>
+        <p data-key="heroSubtitle">Cobramos honorarios conforme a los pagos de deudores </p>
+        <p class="highlight" data-key="heroHighlight">
+          Especialistas en <strong>cobranza extrajudicial</strong> y <strong>recuperación de cartera vencida</strong>
+        </p>
         <a href="#contacto" class="btn-primary" data-key="heroButton">Contáctanos</a>
         <a href="#servicios" class="btn-secondary" data-key="heroLearnMore">Conocer servicios</a>
       </div>
-      
+
     </section>
 
 
@@ -177,10 +218,13 @@
     <section id="servicios" class="services fade-in" data-aos="fade-up">
       <div class="container">
         <h2 id="services-title" data-key="servicesTitle" style="text-align: center; font-size: 2.5rem;">
-          Nuestros Servicios
+          Nuestros servicios de Cobranza en México y el extranjero.
         </h2>
         <p class="services-note" data-key="servicesNote">
-          Cada estrategia se diseña de acuerdo al perfil de la deuda y los objetivos del cliente.
+          Estrategias personalizadas de
+          <strong>cobranza extrajudicial</strong>
+          y <strong>recuperación de cartera vencida</strong>
+          diseñadas según el perfil de la deuda y objetivos del cliente.
         </p>
         <div class="services-grid">
           <!-- Servicio 1 -->
@@ -216,7 +260,7 @@
                 <img class="service-icon" src="Imagenes/asesoria.png"
                   alt="Asesoría profesional en cobranza y recuperación de cartera vencida para empresas y personas independientes"
                   loading="lazy">
-                <h3 data-key="service2Title">Asesoría</h3>
+                <h3 data-key="service2Title">Asesoría en Gestión de Cartera</h3>
 
                 <span cclass="service-tag" data-key="service2Tag">Empresas con cartera vencida y personas
                   independientes</span>
@@ -271,27 +315,40 @@
         </div>
       </div>
     </section>
-
     <!-- Sección Estadísticas Globales -->
-    <section class="global-stats fade-in" data-aos="fade-up">
+    <section class="global-stats fade-in" data-aos="fade-up" aria-labelledby="stats-heading">
       <div class="container stats-container">
-        <div class="stat-box">
-          <span class="stat-number" data-target="20">0</span>
-          <h4 data-key="globalStatsYears">Años de experiencia global</h4>
+
+        <h2 id="stats-heading" class="section-title-stats" data-key="globalStatsTitle"
+          style="text-align: center; margin-bottom: 2rem; font-size: 2rem;">
+          Trayectoria Líder en Recuperación de Activos
+        </h2>
+
+        <div class="stats-grid" style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+
+          <div class="stat-box">
+            <span class="stat-number" data-target="20">20</span>
+            <h3 data-key="globalStatsYears" style="font-size: 1.2rem;">Años de experiencia en cobranza</h3>
+          </div>
+
+          <div class="stat-box">
+            <span class="stat-number" data-target="80">80</span><span>%</span>
+            <h3 data-key="globalStatsEfficiency" style="font-size: 1.2rem;">Éxito en recuperación de cartera</h3>
+          </div>
+
+          <div class="stat-box">
+            <span class="stat-number" data-target="18">18</span>
+            <h3 data-key="globalStatsCountries" style="font-size: 1.2rem;">Cobertura y alcance internacional</h3>
+          </div>
         </div>
-        <div class="stat-box">
-          <span class="stat-number" data-target="80">0</span>
-          <h4 data-key="globalStatsEfficiency">Eficiencia en resultados (%)</h4>
-        </div>
-        <div class="stat-box">
-          <span class="stat-number" data-target="18">0</span>
-          <h4 data-key="globalStatsCountries">Países en los que hemos trabajado</h4>
-        </div>
-        <p class="section-subtitle" data-key="globalStatsSubtitle">
-          Experiencia, eficiencia y alcance internacional que nos respaldan
+
+        <p class="section-subtitle" data-key="globalStatsSubtitle"
+          style="text-align: center; margin-top: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+          Más de dos décadas brindando <strong>soluciones de cobranza legal y extrajudicial</strong> con presencia
+          global,
+          garantizando seguridad jurídica y liquidez para su empresa.
         </p>
       </div>
-
     </section>
 
     <!-- CTA después de Estadísticas -->
@@ -309,34 +366,52 @@
     <!-- Sección Clientes (Carrusel) -->
     <section id="clientes" class="clients fade-in" data-aos="fade-up">
       <div class="container">
-        <h2 id="clients-title" data-key="clientsTitle" style="text-align: center; font-size: 2.5rem;">Clientes</h2>
-        <p data-key="clientsSubtitle" style="text-align: center;">Nuestros principales clientes:</p>
+        <h2 id="clients-title" data-key="clientsTitle" style="text-align: center; font-size: 2.5rem;">Empresas que
+          Confían en Nosotros</h2>
+        <p data-key="clientsSubtitle" style="text-align: center;">Colaboramos con instituciones líderes y empresas
+          globales en la gestión de sus activos y cobranza corporativa.</p>
         <div class="clients-slider">
           <div class="slide-track">
-            <div class="slide"><img src="Imagenes/cemex.png" alt="Logo Cliente Cemex" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/heineken.png" alt="Logo Cliente Cerveza" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/globlaRecovery.png" alt="Logo Cliente Global Recovery" loading="lazy">
+            <div class="slide"><img src="Imagenes/cemex.png" alt="Cemex - Gestión de cobranza corporativa"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/heineken.png" alt="Heineken - Recuperación de cartera vencida"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/globlaRecovery.png"
+                alt="Global Recovery - Soluciones internacionales de deuda" loading="lazy">
             </div>
             <div class="slide"><img src="Imagenes/logo-financiera-independencia.webp"
-                alt="Logo Cliente Financiera Independencia" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/grupoSordo.png" alt="Logo Cliente Grupo Sordo" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/millet.png" alt="Logo Cliente Industrias Millet" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/BOUBYAN.png" alt="Logo Cliente BOUBYAN" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/logo-vitro.png" alt="Logo Cliente Vitro" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/Gladtrust.png" alt="Logo Cliente Gladtrust" loading="lazy"></div>
+                alt="Financiera Independencia - Cliente de servicios legales de cobranza" loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/grupoSordo.png" alt="Grupo Sordo Madaleno - Gestión de activos"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/millet.png" alt="Industrias Millet - Recuperación de créditos"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/BOUBYAN.png" alt="Boubyan - Cliente internacional de cobranza"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/logo-vitro.png" alt="Vitro - Cobranza extrajudicial corporativa"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/Gladtrust.png" alt="Gladtrust - Alianza estratégica en recuperación"
+                loading="lazy"></div>
             <div class="slide"><img src="Imagenes/banco.jpg" alt="Logo Cliente banco" loading="lazy"></div>
             <!-- Repetidos para efecto carrusel infinito -->
-            <div class="slide"><img src="Imagenes/cemex.png" alt="Logo Cliente Cemex" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/heineken.png" alt="Logo Cliente Cerveza" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/globlaRecovery.png" alt="Logo Cliente Global Recovery" loading="lazy">
+            <div class="slide"><img src="Imagenes/cemex.png" alt="Cemex - Gestión de cobranza corporativa"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/heineken.png" alt="Heineken - Recuperación de cartera vencida"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/globlaRecovery.png"
+                alt="Global Recovery - Soluciones internacionales de deuda" loading="lazy">
             </div>
             <div class="slide"><img src="Imagenes/logo-financiera-independencia.webp"
-                alt="Logo Cliente Financiera Independencia" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/grupoSordo.png" alt="Logo Cliente Grupo Sordo" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/millet.png" alt="Logo Cliente Industrias Millet" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/BOUBYAN.png" alt="Logo Cliente BOUBYAN" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/logo-vitro.png" alt="Logo Cliente Vitro" loading="lazy"></div>
-            <div class="slide"><img src="Imagenes/Gladtrust.png" alt="Logo Cliente Gladtrust" loading="lazy"></div>
+                alt="Financiera Independencia - Cliente de servicios legales de cobranza" loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/grupoSordo.png" alt="Grupo Sordo Madaleno - Gestión de activos"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/millet.png" alt="Industrias Millet - Recuperación de créditos"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/BOUBYAN.png" alt="Boubyan - Cliente internacional de cobranza"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/logo-vitro.png" alt="Vitro - Cobranza extrajudicial corporativa"
+                loading="lazy"></div>
+            <div class="slide"><img src="Imagenes/Gladtrust.png" alt="Gladtrust - Alianza estratégica en recuperación"
+                loading="lazy"></div>
             <div class="slide"><img src="Imagenes/banco.jpg" alt="Logo Cliente banco" loading="lazy"></div>
           </div>
         </div>
@@ -362,14 +437,15 @@
           </p>
         </div>
         <div class="about-image" data-aos="fade-left">
-          <img src="Imagenes/Perfil.jpeg" alt="Perfil de la empresa" loading="lazy">
+          <img src="Imagenes/Perfil.jpeg"
+            alt="Lic. Refugio Sandoval e Ing. Thor Robledo - Fundadores de ircdebtrecovery" loading="lazy">
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <h2 class="values-section-title">Nuestros Valores</h2>
+        <h2 class="values-section-title" data-key="valoresTitle">Compromiso en la Recuperación de su Capital</h2>
 
         <div class="values-cards">
 
@@ -377,7 +453,8 @@
           <div class="values-card">
             <h3 data-key="misionTitle">Misión</h3>
             <p data-key="misionDescription">
-              Ser una compañía de servicios sólida que brinde consistentemente un servicio excepcional a todos
+              Ser una compañía de servicios sólida que brinde <strong>consistentemente un servicio excepcional</strong>
+              a todos
               nuestros clientes, impulsando el crecimiento y desarrollo de clientes, empleados y colaboradores a través
               de la
               recuperación de su cartera vencida.
@@ -388,7 +465,7 @@
           <div class="values-card">
             <h3 data-key="visionTitle">Visión</h3>
             <p data-key="visionDescription">
-              Somos una empresa de servicios de primera clase en mejora continua,
+              Somos una empresa de servicios de <strong>primera clase en mejora continua</strong>,
               capaz de establecer una relación cercana con los clientes, personal y
               sociedad para contribuir al desarrollo global.
             </p>
@@ -480,16 +557,34 @@
 
         <!-- Formulario derecho -->
         <div class="contact-form">
-          <form action="enviar.php" method="POST">
-            <input type="text" name="nombre" placeholder="Nombre" required data-key="formNamePlaceholder">
+          <form action="enviar.php" method="POST" id="contactForm">
+            <!-- Campo honeypot (oculto para humanos, visible para bots) -->
+            <div style="opacity: 0; position: absolute; left: -9999px; height: 0; overflow: hidden;">
+              <label for="website">No llenar este campo</label>
+              <input type="text" name="honeypot" id="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <!-- Token CSRF (se genera dinámicamente en PHP) -->
+            <input type="hidden" name="csrf_token" id="csrf_token" value="">
+
+            <!-- Campo de tiempo (para medir cuánto tardó en llenar el formulario) -->
+            <input type="hidden" name="time_taken" id="time_taken" value="0">
+
+            <!-- Campos originales con data-key para traducciones -->
+            <input type="text" name="nombre" placeholder="Nombre" required minlength="2" maxlength="100"
+              data-key="formNamePlaceholder">
+
             <input type="email" name="email" placeholder="Correo electrónico" required data-key="formEmailPlaceholder">
-            <input type="text" name="asunto" placeholder="Asunto" required data-key="formSubjectPlaceholder">
-            <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required
-              data-key="formMessagePlaceholder"></textarea>
+
+            <input type="text" name="asunto" placeholder="Asunto" required minlength="5" maxlength="200"
+              data-key="formSubjectPlaceholder">
+
+            <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required minlength="10"
+              maxlength="2000" data-key="formMessagePlaceholder"></textarea>
+
             <button type="submit" class="btn-primary" data-key="formSendButton">Enviar</button>
           </form>
         </div>
-
       </div>
     </section>
 
@@ -563,12 +658,83 @@
         </div>
 
       </div>
+      <!-- En el footer, reemplaza el bloque de estadísticas con: -->
+      <div class="visit-stats">
+        <h4 style="margin-block-end: 15px; color: #2c3e50;">
+          <i class="fas fa-chart-line"></i> Estadísticas del Sitio
+        </h4>
+
+        <div class="stats-grid">
+          <!-- Visitas Totales -->
+          <div class="stat-card" title="Total de visitas desde el inicio">
+            <div class="stat-icon" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">Visitas Totales</span>
+              <span class="stat-number" id="total-visits" data-target="0">0</span>
+            </div>
+          </div>
+
+          <!-- Visitas Hoy -->
+          <div class="stat-card" title="Visitas de hoy">
+            <div class="stat-icon" style="background: linear-gradient(135deg, #2ecc71, #27ae60);">
+              <i class="fas fa-calendar-day"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">Visitas Hoy</span>
+              <span class="stat-number" id="today-visits" data-target="0">0</span>
+            </div>
+          </div>
+
+          <!-- Visitantes Únicos -->
+          <div class="stat-card" title="Visitantes únicos totales">
+            <div class="stat-icon" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">Visitantes Únicos</span>
+              <span class="stat-number" id="unique-visits" data-target="0">0</span>
+            </div>
+          </div>
+
+          <!-- Visitas del Mes (opcional) -->
+          <div class="stat-card" style="display: none;" id="month-card">
+            <div class="stat-icon" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">Este Mes</span>
+              <span class="stat-number" id="month-visits">0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Información adicional (se puede mostrar al hacer hover) -->
+        <div class="stats-footer">
+          <small style="color: #7f8c8d; font-size: 0.8rem;">
+            <i class="fas fa-sync-alt fa-spin"></i> Actualizado en tiempo real
+            <span id="last-updated" style="margin-inline-start: 10px;"></span>
+          </small>
+        </div>
+
+        <!-- Solo visible en modo debug -->
+        <div id="debug-info"
+          style="display: none; margin-block-start: 10px; padding: 10px; background: #f8f9fa; border-radius: 5px;">
+          <small style="color: #666;">
+            <strong>Debug:</strong>
+            <span id="api-status">Conectando...</span>
+          </small>
+        </div>
+      </div>
     </footer>
 
   </main>
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="JavaScript/script.js"></script>
+  <!-- Script del contador de visitas -->
+  <script src="JavaScript/visit-counter.js"></script>
 
 </body>
 <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js">
@@ -604,6 +770,118 @@
   ubicaciones.forEach((u) => {
     L.marker(u.coords).addTo(map).bindPopup(`<strong>${u.pais}</strong>`);
   });
+</script>
+<script>
+  // Generar token CSRF del lado del cliente (compatible con PHP)
+  document.addEventListener('DOMContentLoaded', function () {
+    // Generar un token único para esta sesión
+    function generateCSRFToken() {
+      return 'csrf_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    }
+
+    // Guardar token en localStorage para esta sesión
+    let csrfToken = localStorage.getItem('form_csrf_token');
+    if (!csrfToken) {
+      csrfToken = generateCSRFToken();
+      localStorage.setItem('form_csrf_token', csrfToken);
+    }
+
+    // Establecer el token en el campo oculto
+    document.getElementById('csrf_token').value = csrfToken;
+
+    // Configurar medición de tiempo
+    const form = document.getElementById('contactForm');
+    const timeField = document.getElementById('time_taken');
+    const startTime = Date.now();
+
+    form.addEventListener('submit', function (e) {
+      // Calcular tiempo transcurrido en segundos
+      const timeTaken = Math.floor((Date.now() - startTime) / 1000);
+      timeField.value = timeTaken;
+
+      // Validación básica de spam en cliente (sin afectar traducciones)
+      const nombre = form.querySelector('[name="nombre"]').value;
+      const email = form.querySelector('[name="email"]').value;
+      const asunto = form.querySelector('[name="asunto"]').value;
+      const mensaje = form.querySelector('[name="mensaje"]').value;
+
+      // Combinar todos los campos para verificar spam
+      const textoCompleto = (nombre + ' ' + email + ' ' + asunto + ' ' + mensaje).toLowerCase();
+
+      // Lista de patrones de spam (puedes ajustar según necesites)
+      const spamPatrones = [
+        /https?:\/\/\S+/gi,      // URLs completas
+        /www\.\S+/gi,            // URLs con www
+        /\[url\]/gi,             // Tags de URL
+        /bit\.ly|goo\.gl|tinyurl/gi, // Acortadores de URL
+        /viagra|cialis|levitra/gi,   // Medicamentos spam
+        /casino|poker|betting/gi,    // Juego spam
+        /lottery|prize|winner/gi,    // Premios spam
+        /nigerian|prince|inheritance/gi, // Scams comunes
+        /\b(free|100%|guaranteed|no risk)\b/gi, // Ofertas spam
+        /[^\w\s@.,!?\-áéíóúÁÉÍÓÚñÑ]/gu  // Caracteres extraños (excepto acentos)
+      ];
+
+      // Verificar patrones de spam
+      let spamDetectado = false;
+      for (const patron of spamPatrones) {
+        if (patron.test(textoCompleto)) {
+          spamDetectado = true;
+          break;
+        }
+      }
+
+      // Contar enlaces
+      const linkCount = (textoCompleto.match(/https?:\/\/|www\./gi) || []).length;
+      if (linkCount > 2) {
+        spamDetectado = true;
+      }
+
+      // Si se detecta spam, mostrar alerta en el idioma actual
+      if (spamDetectado) {
+        e.preventDefault();
+
+        // Detectar idioma actual basado en la URL o localStorage
+        let currentLang = localStorage.getItem('language') || 'es';
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('lang')) {
+          currentLang = urlParams.get('lang');
+        }
+
+        // Mensajes en diferentes idiomas
+        const messages = {
+          'es': 'El mensaje contiene contenido no permitido. Por favor, revisa y vuelve a intentar.',
+          'en': 'The message contains prohibited content. Please review and try again.',
+          'zh': '消息包含禁止的内容。请检查后重试。'
+        };
+
+        alert(messages[currentLang] || messages['es']);
+        return false;
+      }
+
+      // Verificar que no se haya llenado el honeypot
+      const honeypot = form.querySelector('[name="honeypot"]').value;
+      if (honeypot.trim() !== '') {
+        e.preventDefault();
+        // Simular éxito para bots
+        window.location.href = 'index.html?success=1';
+        return false;
+      }
+    });
+
+    // Eliminar token después de 24 horas
+    setTimeout(function () {
+      localStorage.removeItem('form_csrf_token');
+    }, 24 * 60 * 60 * 1000);
+  });
+</script>
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCH1MYMKQG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-RCH1MYMKQG');
 </script>
 
 </html>
